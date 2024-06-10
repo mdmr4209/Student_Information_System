@@ -103,7 +103,7 @@ class _CalculatorState extends State<Calculator> {
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
+                        children: [
                           Padding(
                               padding: const EdgeInsets.all(10.0),
                               child: Text(result,

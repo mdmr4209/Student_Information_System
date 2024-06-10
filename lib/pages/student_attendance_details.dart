@@ -41,7 +41,8 @@ class StudentAttendanceDetails extends StatelessWidget {
                     DataColumn(label: Text("Date")),
                     DataColumn(label: Text('Attendance')),
                   ],
-                  rows: [DataRow(cells: [
+                  rows: [
+                    DataRow(cells: [
                     DataCell(Text('2014751201')),
                     DataCell(Text('MD. Mahbubur Rahman')),
                     DataCell(Text('11/06/24')),
@@ -94,7 +95,7 @@ class StudentAttendanceDetails extends StatelessWidget {
                   },
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                    backgroundColor: Colors.grey[800], // Updated
+                    backgroundColor: Colors.grey[800],
                   ),
                   child: Text('Update Student Attendanca', style: TextStyle(color: Colors.white)),
                 ),

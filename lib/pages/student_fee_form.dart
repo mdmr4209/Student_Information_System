@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ums/widgets/widget.dart'; 
+import 'package:ums/widgets/widget.dart';
 
 class StudentFeeForm extends StatefulWidget {
   @override
@@ -36,23 +36,20 @@ class _StudentFeeFormState extends State<StudentFeeForm> {
       ),
       drawer: Drawer1(),
       body: SingleChildScrollView(
-        child: Center(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Center(
               child: Card(
                 margin: EdgeInsets.symmetric(horizontal: 20.0),
-                color: Colors.white, 
-                child: Padding(
-                  padding: const EdgeInsets.all(20.0),
+                color: Colors.white,
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
-                    children: <Widget>[
+                    children: [
                       Row(
-                        children: <Widget>[
+                        children: [
                           Text('Select Id No', style: TextStyle(fontWeight: FontWeight.bold)),
                           SizedBox(width: 10),
-                          DropdownButton<String>(
+                          DropdownButton(
                             value: selectedId,
                             onChanged: (newValue) {
                               setState(() {
@@ -60,7 +57,7 @@ class _StudentFeeFormState extends State<StudentFeeForm> {
                               });
                             },
                             items: ids.map((id) {
-                              return DropdownMenuItem<String>(
+                              return DropdownMenuItem(
                                 value: id,
                                 child: Text(id),
                               );
@@ -84,10 +81,10 @@ class _StudentFeeFormState extends State<StudentFeeForm> {
                       ),
                       SizedBox(height: 10.0),
                       Row(
-                        children: <Widget>[
+                        children: [
                           Text('Course', style: TextStyle(fontWeight: FontWeight.bold)),
                           SizedBox(width: 10),
-                          DropdownButton<String>(
+                          DropdownButton(
                             value: selectedCourse,
                             onChanged: (newValue) {
                               setState(() {
@@ -95,7 +92,7 @@ class _StudentFeeFormState extends State<StudentFeeForm> {
                               });
                             },
                             items: courses.map((course) {
-                              return DropdownMenuItem<String>(
+                              return DropdownMenuItem(
                                 value: course,
                                 child: Text(course),
                               );
@@ -105,10 +102,10 @@ class _StudentFeeFormState extends State<StudentFeeForm> {
                       ),
                       SizedBox(height: 10.0),
                       Row(
-                        children: <Widget>[
+                        children: [
                           Text('Department', style: TextStyle(fontWeight: FontWeight.bold)),
                           SizedBox(width: 10),
-                          DropdownButton<String>(
+                          DropdownButton(
                             value: selectedBranch,
                             onChanged: (newValue) {
                               setState(() {
@@ -116,7 +113,7 @@ class _StudentFeeFormState extends State<StudentFeeForm> {
                               });
                             },
                             items: department.map((branch) {
-                              return DropdownMenuItem<String>(
+                              return DropdownMenuItem(
                                 value: branch,
                                 child: Text(branch),
                               );
@@ -126,10 +123,10 @@ class _StudentFeeFormState extends State<StudentFeeForm> {
                       ),
                       SizedBox(height: 10.0),
                       Row(
-                        children: <Widget>[
+                        children:[
                           Text('Semester', style: TextStyle(fontWeight: FontWeight.bold)),
                           SizedBox(width: 10),
-                          DropdownButton<String>(
+                          DropdownButton(
                             value: selectedSemester,
                             onChanged: (newValue) {
                               setState(() {
@@ -137,7 +134,7 @@ class _StudentFeeFormState extends State<StudentFeeForm> {
                               });
                             },
                             items: semesters.map((semester) {
-                              return DropdownMenuItem<String>(
+                              return DropdownMenuItem(
                                 value: semester,
                                 child: Text(semester),
                               );
@@ -155,7 +152,7 @@ class _StudentFeeFormState extends State<StudentFeeForm> {
                       SizedBox(height: 20.0),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
+                        children: [
                           ElevatedButton(
                             onPressed: () {ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
@@ -168,7 +165,7 @@ class _StudentFeeFormState extends State<StudentFeeForm> {
                             },
                               style: ElevatedButton.styleFrom(
                                 padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                                backgroundColor: Colors.greenAccent, // Updated
+                                backgroundColor: Colors.greenAccent,
                               ),
                               child: Text('Pay', style: TextStyle(color: Colors.black))
                           ),
@@ -178,7 +175,7 @@ class _StudentFeeFormState extends State<StudentFeeForm> {
                             },
                               style: ElevatedButton.styleFrom(
                                 padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                                backgroundColor: Colors.black87, // Updated
+                                backgroundColor: Colors.black87,
                               ),
                               child: Text('Back', style: TextStyle(color: Colors.white))
                             ),
@@ -190,8 +187,6 @@ class _StudentFeeFormState extends State<StudentFeeForm> {
               ),
             ),
           ),
-        ),
-      ),
     );
   }
 }

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:ums/pages/home.dart';
 
@@ -10,7 +12,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
           child: Padding(
-        padding: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(15.0),
         child: Container(
           decoration: BoxDecoration(
             color: Colors.white54,
@@ -105,7 +107,9 @@ class LoginPage extends StatelessWidget {
                         width: 10,
                       ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          exit(0);
+                        },
                         style: ButtonStyle(
                           minimumSize: WidgetStatePropertyAll(
                             Size(150, 60),
@@ -134,7 +138,8 @@ class LoginPage extends StatelessWidget {
             ),
           ),
         ),
-      )),
+      )
+      ),
     );
   }
 }

@@ -121,7 +121,7 @@ class NewStudentDetails extends StatelessWidget {
                   ),
                   SizedBox(width: 15),
                   Expanded(
-                      child: Container()), // Empty space to balance the row
+                      child: Container()),
                 ],
               ),
               SizedBox(height: 20),
@@ -142,7 +142,7 @@ class NewStudentDetails extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       padding:
                           EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                      backgroundColor: Colors.black87, // Updated
+                      backgroundColor: Colors.black87,
                     ),
                     child:
                         Text('Submit', style: TextStyle(color: Colors.white)),
@@ -154,7 +154,7 @@ class NewStudentDetails extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       padding:
                           EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                      backgroundColor: Colors.black87, // Updated
+                      backgroundColor: Colors.black87,
                     ),
                     child:
                         Text('Cancel', style: TextStyle(color: Colors.white)),
@@ -169,10 +169,17 @@ class NewStudentDetails extends StatelessWidget {
   }
 
   Widget buildTextField(String labelText) {
-    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-      Text(labelText),
-      SizedBox(height: 5),
-      TextField(decoration: InputDecoration(border: OutlineInputBorder()))
-    ]);
+    return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(labelText),
+          SizedBox(height: 5),
+          TextField(
+              decoration: InputDecoration(
+                  border: OutlineInputBorder()
+              )
+          )
+        ]
+    );
   }
 }

@@ -33,7 +33,7 @@ class StudentAttendance extends StatelessWidget {
                 border: OutlineInputBorder(),
                 labelText: 'Select ID Number',
               ),
-              items: <String>[
+              items:[
                 '2014751201',
                 '2014751202',
                 '2014751203',
@@ -55,7 +55,7 @@ class StudentAttendance extends StatelessWidget {
                 border: OutlineInputBorder(),
                 labelText: 'Attendance',
               ),
-              items: <String>['Present', 'Absent', 'Leave'].map((String value) {
+              items: ['Present', 'Absent', 'Leave'].map((String value) {
                 return DropdownMenuItem<String>(
                   value: value,
                   child: Text(value),
@@ -92,7 +92,7 @@ class StudentAttendance extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       padding:
                           EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                      backgroundColor: Colors.grey[800], // Updated
+                      backgroundColor: Colors.grey[800],
                     ),
                     child:
                         Text('Submit', style: TextStyle(color: Colors.white))),
@@ -106,7 +106,7 @@ class StudentAttendance extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       padding:
                           EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                      backgroundColor: Colors.grey[800], // Updated
+                      backgroundColor: Colors.grey[800],
                     ),
                     child:
                         Text('Cancel', style: TextStyle(color: Colors.white))),

@@ -12,7 +12,7 @@ class Drawer1 extends StatelessWidget{
               color: Colors.deepPurple[200],
             ),
             child: Container(
-              height: 50, // Set the drawer header height
+              height: 50,
               child: Center(
                 child: Text(
                   'M E N U',

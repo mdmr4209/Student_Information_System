@@ -189,7 +189,7 @@ class StudentDetails extends StatelessWidget {
                   },
                     style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                      backgroundColor: Colors.grey[800], // Updated
+                      backgroundColor: Colors.grey[800],
                     ),
                     child: Text('Delete', style: TextStyle(color: Colors.white))
                 ),
@@ -201,7 +201,7 @@ class StudentDetails extends StatelessWidget {
                 },
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                    backgroundColor: Colors.greenAccent, // Updated
+                    backgroundColor: Colors.greenAccent,
                   ),
                   child: Text('Add Student', style: TextStyle(color: Colors.black))
               ),
@@ -212,7 +212,7 @@ class StudentDetails extends StatelessWidget {
                 },
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                    backgroundColor: Colors.teal[400], // Updated
+                    backgroundColor: Colors.teal[400],
                   ),
                   child: Text('Update Student Details', style: TextStyle(color: Colors.white))
               ),

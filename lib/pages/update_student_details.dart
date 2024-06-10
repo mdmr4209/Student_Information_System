@@ -118,9 +118,9 @@ class UpdateStudentDetails extends StatelessWidget {
                       children: [
                         Text("Course"),
                         SizedBox(height: 5),
-                        DropdownButtonFormField<String>(
+                        DropdownButtonFormField(
                           items: ['Bsc', 'Msc', 'PhD']
-                              .map((String value) => DropdownMenuItem<String>(
+                              .map((String value) => DropdownMenuItem(
                                     value: value,
                                     child: Text(value),
                                   ))
@@ -144,9 +144,9 @@ class UpdateStudentDetails extends StatelessWidget {
                       children: [
                         Text("Branch"),
                         SizedBox(height: 5),
-                        DropdownButtonFormField<String>(
+                        DropdownButtonFormField(
                           items: ['CSE', 'ECE', 'ME']
-                              .map((String value) => DropdownMenuItem<String>(
+                              .map((String value) => DropdownMenuItem(
                                     value: value,
                                     child: Text(value),
                                   ))
@@ -182,7 +182,7 @@ class UpdateStudentDetails extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       padding:
                           EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                      backgroundColor: Colors.black87, // Updated
+                      backgroundColor: Colors.black87,
                     ),
                     child:
                         Text('Submit', style: TextStyle(color: Colors.white)),
@@ -194,7 +194,7 @@ class UpdateStudentDetails extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       padding:
                           EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                      backgroundColor: Colors.black87, // Updated
+                      backgroundColor: Colors.black87,
                     ),
                     child: Text('Cancel', style: TextStyle(color: Colors.white)),
                   ),
